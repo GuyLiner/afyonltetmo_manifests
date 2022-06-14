@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="cm-12.1" />
+
+    <remote name="device"
+            fetch="https://github.com"
+            revision="cm-12.1"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="cm-12.1"/>
+
+    <!--Device Trees-->
+    <project path="device/samsung/afyonltetmo" name="GuyLiner/android_device_samsung_afyonltetmo" remote="device" />
+    <project path="device/samsung/msm8226-common" name="GuyLiner/android_device_samsung_msm8226-common" remote="device"/>
+    <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="device" />
+    <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" remote="device" />
+
+    <!--Kernel-->
+    <project path="kernel/samsung/msm8226" name="GuyLiner/android_kernel_samsung_msm8226" remote="kernel" />
+
+    <!-- Vendor folders -->
+    <project path="vendor/samsung/afyonltetmo" name="GuyLiner/android_vendor_samsung_afyonltetmo" remote="kernel" />
+</manifest>
